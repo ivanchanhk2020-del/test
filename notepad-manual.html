@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notepad User Manual</title>
+  <link rel="stylesheet" href="assets/site-theme.css">
+  <link rel="stylesheet" href="assets/page-notepad-manual.css">
+</head>
+<body class="manual-page">
+  <script>document.body.classList.add("intro-ready", "anim-ready");</script>
+  <div class="top-strip">
+    <div class="container">
+      <span>24 Hours Service</span>
+      <span>Online Appointment and Emergency Support</span>
+    </div>
+  </div>
+  <nav>
+    <div class="container nav-inner">
+      <div class="brand"></div>
+      <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="team.html">Our Team</a>
+        <a href="research.html">Research</a>
+        <a href="services.html">Services</a>
+        <a href="notepad-manual.html">Notepad Manual</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-wrap">
+    <div class="container hero">
+      <div class="hero-bar-heading">
+        <h1>Notepad<br>User Manual</h1>
+      </div>
+      <p class="hero-subtitle">A comprehensive guide to using Windows Notepad &mdash; the fast, lightweight text editor built into every version of Windows.</p>
+    </div>
+  </section>
+
+  <main class="main">
+    <div class="container">
+
+      <nav class="toc-panel panel" data-reveal data-reveal-index="0" aria-label="Table of contents">
+        <h2>Table of Contents</h2>
+        <ol class="toc-list">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#opening-notepad">Opening Notepad</a></li>
+          <li><a href="#interface-overview">Interface Overview</a></li>
+          <li><a href="#creating-files">Creating a New File</a></li>
+          <li><a href="#opening-files">Opening an Existing File</a></li>
+          <li><a href="#editing-text">Editing Text</a></li>
+          <li><a href="#find-replace">Find &amp; Replace</a></li>
+          <li><a href="#word-wrap">Word Wrap</a></li>
+          <li><a href="#font-settings">Font &amp; Appearance</a></li>
+          <li><a href="#saving-files">Saving Files</a></li>
+          <li><a href="#printing">Printing</a></li>
+          <li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+          <li><a href="#tabs">Using Tabs</a></li>
+          <li><a href="#tips">Tips &amp; Tricks</a></li>
+        </ol>
+      </nav>
+
+      <!-- 1. Introduction -->
+      <section class="panel manual-section" id="introduction" data-reveal data-reveal-index="1">
+        <h2>1. Introduction</h2>
+        <p>Notepad is a simple, fast text editor that has been included with every version of Microsoft Windows. It is designed for editing plain-text files and is one of the most commonly used utilities on the Windows platform.</p>
+        <p>Notepad is ideal for:</p>
+        <ul>
+          <li>Quick note-taking and drafting text</li>
+          <li>Editing configuration files (<code>.ini</code>, <code>.cfg</code>, <code>.conf</code>)</li>
+          <li>Writing and reviewing code or scripts (<code>.html</code>, <code>.css</code>, <code>.js</code>, <code>.py</code>, <code>.bat</code>)</li>
+          <li>Viewing log files and system output</li>
+          <li>Stripping formatting from copied text (paste into Notepad to get plain text)</li>
+        </ul>
+        <div class="callout">
+          <strong>Note:</strong> The Windows 11 version of Notepad introduced a modern design with dark mode, tabs, and an autosave feature. This manual covers both the classic and modern versions.
+        </div>
+      </section>
+
+      <!-- 2. Opening Notepad -->
+      <section class="panel manual-section" id="opening-notepad" data-reveal data-reveal-index="2">
+        <h2>2. Opening Notepad</h2>
+        <p>There are several ways to launch Notepad on Windows:</p>
+        <div class="method-grid">
+          <div class="method-card">
+            <h3>Start Menu</h3>
+            <p>Click the <strong>Start</strong> button, type <kbd>Notepad</kbd>, and press <kbd>Enter</kbd>.</p>
+          </div>
+          <div class="method-card">
+            <h3>Run Dialog</h3>
+            <p>Press <kbd>Win</kbd> + <kbd>R</kbd>, type <code>notepad</code>, and press <kbd>Enter</kbd>.</p>
+          </div>
+          <div class="method-card">
+            <h3>Command Prompt</h3>
+            <p>Open Command Prompt or PowerShell and type <code>notepad</code>. You can also open a specific file: <code>notepad myfile.txt</code>.</p>
+          </div>
+          <div class="method-card">
+            <h3>Right-Click Context Menu</h3>
+            <p>Right-click on any <code>.txt</code> file and select <strong>Open with &gt; Notepad</strong>.</p>
+          </div>
+          <div class="method-card">
+            <h3>File Explorer</h3>
+            <p>Navigate to <code>C:\Windows\System32\notepad.exe</code> and double-click to run.</p>
+          </div>
+          <div class="method-card">
+            <h3>Create New Text File</h3>
+            <p>Right-click in any folder, select <strong>New &gt; Text Document</strong>, then double-click the new file to open it in Notepad.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Interface Overview -->
+      <section class="panel manual-section" id="interface-overview" data-reveal data-reveal-index="3">
+        <h2>3. Interface Overview</h2>
+        <p>The Notepad window consists of the following elements:</p>
+        <div class="interface-layout">
+          <div class="interface-item">
+            <h3>Title Bar</h3>
+            <p>Displays the name of the current file. An asterisk (<code>*</code>) or dot appears if the file has unsaved changes.</p>
+          </div>
+          <div class="interface-item">
+            <h3>Menu Bar</h3>
+            <p>Contains the menus: <strong>File</strong>, <strong>Edit</strong>, <strong>Format</strong>, <strong>View</strong>, and <strong>Help</strong>.</p>
+          </div>
+          <div class="interface-item">
+            <h3>Text Area</h3>
+            <p>The main editing area where you type and edit text. This occupies most of the window.</p>
+          </div>
+          <div class="interface-item">
+            <h3>Status Bar</h3>
+            <p>Shows the current cursor position (line and column number), the zoom level, the line ending format (Windows CRLF, Unix LF, or Mac CR), and the file encoding (UTF-8, ANSI, etc.).</p>
+          </div>
+          <div class="interface-item">
+            <h3>Tab Bar <span class="badge">Windows 11</span></h3>
+            <p>In the modern Notepad, a tab bar appears at the top allowing you to work with multiple files in a single window.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Creating a New File -->
+      <section class="panel manual-section" id="creating-files" data-reveal data-reveal-index="4">
+        <h2>4. Creating a New File</h2>
+        <p>To create a new, blank text file:</p>
+        <ol class="steps-list">
+          <li>Open Notepad (the application starts with a blank document by default).</li>
+          <li>Alternatively, if Notepad is already open, go to <strong>File &gt; New</strong> or press <kbd>Ctrl</kbd> + <kbd>N</kbd>.</li>
+          <li>In Windows 11 Notepad, a new tab is created. In the classic version, a new window opens or the current document is cleared (you will be prompted to save unsaved changes).</li>
+          <li>Begin typing your content in the text area.</li>
+        </ol>
+        <div class="callout">
+          <strong>Tip:</strong> In Windows 11, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> to open a new Notepad window instead of a new tab.
+        </div>
+      </section>
+
+      <!-- 5. Opening an Existing File -->
+      <section class="panel manual-section" id="opening-files" data-reveal data-reveal-index="5">
+        <h2>5. Opening an Existing File</h2>
+        <ol class="steps-list">
+          <li>Go to <strong>File &gt; Open</strong> or press <kbd>Ctrl</kbd> + <kbd>O</kbd>.</li>
+          <li>In the Open dialog, navigate to the location of your file.</li>
+          <li>By default, only <code>.txt</code> files are shown. Change the file type filter to <strong>All Files (*.*)</strong> to see all file types.</li>
+          <li>Select the file and click <strong>Open</strong>.</li>
+        </ol>
+        <h3>Supported Encodings</h3>
+        <p>When opening a file, Notepad automatically detects the encoding. The encoding selector in the Open dialog lets you choose from:</p>
+        <ul>
+          <li><strong>UTF-8</strong> &mdash; the default and most widely used encoding</li>
+          <li><strong>UTF-16 LE</strong> &mdash; Unicode with little-endian byte order</li>
+          <li><strong>UTF-16 BE</strong> &mdash; Unicode with big-endian byte order</li>
+          <li><strong>ANSI</strong> &mdash; legacy system codepage encoding</li>
+        </ul>
+      </section>
+
+      <!-- 6. Editing Text -->
+      <section class="panel manual-section" id="editing-text" data-reveal data-reveal-index="6">
+        <h2>6. Editing Text</h2>
+        <p>Notepad provides essential text editing capabilities:</p>
+
+        <h3>Basic Operations</h3>
+        <table class="shortcut-table">
+          <thead>
+            <tr><th>Action</th><th>How to Do It</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Type text</td><td>Click in the text area and start typing</td></tr>
+            <tr><td>Select text</td><td>Click and drag, or hold <kbd>Shift</kbd> and use arrow keys</td></tr>
+            <tr><td>Select all text</td><td><kbd>Ctrl</kbd> + <kbd>A</kbd></td></tr>
+            <tr><td>Cut</td><td><kbd>Ctrl</kbd> + <kbd>X</kbd></td></tr>
+            <tr><td>Copy</td><td><kbd>Ctrl</kbd> + <kbd>C</kbd></td></tr>
+            <tr><td>Paste</td><td><kbd>Ctrl</kbd> + <kbd>V</kbd></td></tr>
+            <tr><td>Undo</td><td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td></tr>
+            <tr><td>Redo <span class="badge">Windows 11</span></td><td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td></tr>
+            <tr><td>Delete selected text</td><td><kbd>Delete</kbd> key</td></tr>
+            <tr><td>Insert date and time</td><td><kbd>F5</kbd> or <strong>Edit &gt; Time/Date</strong></td></tr>
+          </tbody>
+        </table>
+
+        <h3>Navigating the Document</h3>
+        <table class="shortcut-table">
+          <thead>
+            <tr><th>Action</th><th>Shortcut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Go to a specific line</td><td><kbd>Ctrl</kbd> + <kbd>G</kbd></td></tr>
+            <tr><td>Move to beginning of line</td><td><kbd>Home</kbd></td></tr>
+            <tr><td>Move to end of line</td><td><kbd>End</kbd></td></tr>
+            <tr><td>Move to beginning of document</td><td><kbd>Ctrl</kbd> + <kbd>Home</kbd></td></tr>
+            <tr><td>Move to end of document</td><td><kbd>Ctrl</kbd> + <kbd>End</kbd></td></tr>
+            <tr><td>Move one word left/right</td><td><kbd>Ctrl</kbd> + <kbd>&larr;</kbd> / <kbd>&rarr;</kbd></td></tr>
+          </tbody>
+        </table>
+        <div class="callout">
+          <strong>Note:</strong> The <strong>Go To Line</strong> feature (<kbd>Ctrl</kbd> + <kbd>G</kbd>) is only available when Word Wrap is turned <strong>off</strong> in the classic version.
+        </div>
+      </section>
+
+      <!-- 7. Find & Replace -->
+      <section class="panel manual-section" id="find-replace" data-reveal data-reveal-index="7">
+        <h2>7. Find &amp; Replace</h2>
+
+        <h3>Find</h3>
+        <ol class="steps-list">
+          <li>Press <kbd>Ctrl</kbd> + <kbd>F</kbd> or go to <strong>Edit &gt; Find</strong>.</li>
+          <li>Type the text you want to search for in the <strong>Find what</strong> field.</li>
+          <li>Choose the search direction: <strong>Up</strong> or <strong>Down</strong>.</li>
+          <li>Optionally check <strong>Match case</strong> for case-sensitive search or <strong>Wrap around</strong> to search the entire document.</li>
+          <li>Click <strong>Find Next</strong> or press <kbd>Enter</kbd> to locate the next occurrence.</li>
+        </ol>
+
+        <h3>Replace</h3>
+        <ol class="steps-list">
+          <li>Press <kbd>Ctrl</kbd> + <kbd>H</kbd> or go to <strong>Edit &gt; Replace</strong>.</li>
+          <li>Enter the text to find in the <strong>Find what</strong> field.</li>
+          <li>Enter the replacement text in the <strong>Replace with</strong> field.</li>
+          <li>Click <strong>Replace</strong> to replace the current occurrence, or <strong>Replace All</strong> to replace every occurrence at once.</li>
+        </ol>
+        <div class="callout">
+          <strong>Tip:</strong> Use <kbd>F3</kbd> to repeat the last search (Find Next) without opening the Find dialog.
+        </div>
+      </section>
+
+      <!-- 8. Word Wrap -->
+      <section class="panel manual-section" id="word-wrap" data-reveal data-reveal-index="8">
+        <h2>8. Word Wrap</h2>
+        <p>Word Wrap controls whether long lines of text are wrapped to fit within the Notepad window or extend beyond the visible area with a horizontal scrollbar.</p>
+        <h3>Toggling Word Wrap</h3>
+        <ul>
+          <li>Go to <strong>Format &gt; Word Wrap</strong> and click to toggle it on or off.</li>
+          <li>When <strong>enabled</strong>, text wraps at the edge of the window &mdash; no horizontal scrollbar appears.</li>
+          <li>When <strong>disabled</strong>, each line extends to its full length and a horizontal scrollbar appears when lines are longer than the window width.</li>
+        </ul>
+        <div class="callout">
+          <strong>Note:</strong> When Word Wrap is on, the <strong>Go To Line</strong> feature and the <strong>Status Bar</strong> line/column display may behave differently in the classic version. The Windows 11 version supports both simultaneously.
+        </div>
+      </section>
+
+      <!-- 9. Font & Appearance -->
+      <section class="panel manual-section" id="font-settings" data-reveal data-reveal-index="9">
+        <h2>9. Font &amp; Appearance</h2>
+
+        <h3>Changing the Font</h3>
+        <ol class="steps-list">
+          <li>Go to <strong>Format &gt; Font</strong>.</li>
+          <li>Select a <strong>Font family</strong> (e.g., Consolas, Courier New, Lucida Console).</li>
+          <li>Choose a <strong>Font style</strong> (Regular, Bold, Italic, Bold Italic).</li>
+          <li>Set the <strong>Size</strong>.</li>
+          <li>Click <strong>OK</strong> to apply.</li>
+        </ol>
+        <div class="callout">
+          <strong>Tip:</strong> For editing code or log files, use a monospaced font like <strong>Consolas</strong> or <strong>Courier New</strong> so that columns align properly.
+        </div>
+
+        <h3>Zoom</h3>
+        <p>Quickly change the text display size without altering the font setting:</p>
+        <table class="shortcut-table">
+          <thead>
+            <tr><th>Action</th><th>Shortcut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Zoom in</td><td><kbd>Ctrl</kbd> + <kbd>+</kbd> (or <kbd>Ctrl</kbd> + scroll wheel up)</td></tr>
+            <tr><td>Zoom out</td><td><kbd>Ctrl</kbd> + <kbd>-</kbd> (or <kbd>Ctrl</kbd> + scroll wheel down)</td></tr>
+            <tr><td>Reset zoom to 100%</td><td><kbd>Ctrl</kbd> + <kbd>0</kbd></td></tr>
+          </tbody>
+        </table>
+
+        <h3>Dark Mode <span class="badge">Windows 11</span></h3>
+        <p>The modern Windows 11 Notepad supports a dark theme. To enable it:</p>
+        <ol class="steps-list">
+          <li>Click the <strong>Settings</strong> gear icon (top-right corner).</li>
+          <li>Under <strong>App theme</strong>, select <strong>Dark</strong>, <strong>Light</strong>, or <strong>Use system setting</strong>.</li>
+        </ol>
+      </section>
+
+      <!-- 10. Saving Files -->
+      <section class="panel manual-section" id="saving-files" data-reveal data-reveal-index="10">
+        <h2>10. Saving Files</h2>
+
+        <h3>Save</h3>
+        <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> or go to <strong>File &gt; Save</strong>. If the file has not been saved before, a Save As dialog will appear.</p>
+
+        <h3>Save As</h3>
+        <p>Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> or go to <strong>File &gt; Save As</strong> to save the file with a different name, location, or encoding.</p>
+
+        <h3>Encoding Options</h3>
+        <p>When saving, you can select the encoding from the dropdown at the bottom of the Save As dialog:</p>
+        <table class="shortcut-table">
+          <thead>
+            <tr><th>Encoding</th><th>Description</th><th>Best For</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>UTF-8</strong></td><td>Unicode (no BOM by default)</td><td>Most modern use cases, web files, cross-platform</td></tr>
+            <tr><td><strong>UTF-8 with BOM</strong></td><td>UTF-8 with Byte Order Mark</td><td>Some legacy applications that require BOM detection</td></tr>
+            <tr><td><strong>UTF-16 LE</strong></td><td>Unicode little-endian</td><td>Windows-native Unicode files</td></tr>
+            <tr><td><strong>UTF-16 BE</strong></td><td>Unicode big-endian</td><td>Cross-platform Unicode (rare)</td></tr>
+            <tr><td><strong>ANSI</strong></td><td>System default codepage</td><td>Legacy applications, older systems</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Autosave <span class="badge">Windows 11</span></h3>
+        <p>Windows 11 Notepad automatically saves your work in the background. If you close Notepad without saving, your unsaved content is preserved and restored the next time you open the application &mdash; no manual save required.</p>
+      </section>
+
+      <!-- 11. Printing -->
+      <section class="panel manual-section" id="printing" data-reveal data-reveal-index="11">
+        <h2>11. Printing</h2>
+        <ol class="steps-list">
+          <li>Go to <strong>File &gt; Print</strong> or press <kbd>Ctrl</kbd> + <kbd>P</kbd>.</li>
+          <li>Select your printer from the list.</li>
+          <li>Configure print settings (page range, number of copies, etc.).</li>
+          <li>Click <strong>Print</strong>.</li>
+        </ol>
+        <h3>Page Setup</h3>
+        <p>Before printing, you can configure the page layout via <strong>File &gt; Page Setup</strong>:</p>
+        <ul>
+          <li><strong>Paper size</strong> and <strong>orientation</strong> (Portrait / Landscape).</li>
+          <li><strong>Margins</strong> (left, right, top, bottom).</li>
+          <li><strong>Header and Footer</strong> &mdash; use special codes to insert dynamic values:
+            <ul>
+              <li><code>&amp;f</code> &mdash; File name</li>
+              <li><code>&amp;d</code> &mdash; Current date</li>
+              <li><code>&amp;t</code> &mdash; Current time</li>
+              <li><code>&amp;p</code> &mdash; Page number</li>
+              <li><code>&amp;l</code> &mdash; Left-align</li>
+              <li><code>&amp;c</code> &mdash; Center</li>
+              <li><code>&amp;r</code> &mdash; Right-align</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 12. Keyboard Shortcuts -->
+      <section class="panel manual-section" id="keyboard-shortcuts" data-reveal data-reveal-index="12">
+        <h2>12. Keyboard Shortcuts</h2>
+        <p>A comprehensive reference of all keyboard shortcuts available in Notepad:</p>
+        <table class="shortcut-table shortcut-table-full">
+          <thead>
+            <tr><th>Shortcut</th><th>Action</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>N</kbd></td><td>New file / new tab</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></td><td>New window <span class="badge">Windows 11</span></td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>O</kbd></td><td>Open file</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>S</kbd></td><td>Save</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></td><td>Save As</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>P</kbd></td><td>Print</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td><td>Undo</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td><td>Redo <span class="badge">Windows 11</span></td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>X</kbd></td><td>Cut</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>C</kbd></td><td>Copy</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>V</kbd></td><td>Paste</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>A</kbd></td><td>Select all</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>F</kbd></td><td>Find</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>H</kbd></td><td>Replace</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>G</kbd></td><td>Go to line</td></tr>
+            <tr><td><kbd>F3</kbd></td><td>Find next</td></tr>
+            <tr><td><kbd>Shift</kbd> + <kbd>F3</kbd></td><td>Find previous</td></tr>
+            <tr><td><kbd>F5</kbd></td><td>Insert date and time</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>+</kbd></td><td>Zoom in</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>-</kbd></td><td>Zoom out</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>0</kbd></td><td>Reset zoom</td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>W</kbd></td><td>Close tab <span class="badge">Windows 11</span></td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>Tab</kbd></td><td>Switch to next tab <span class="badge">Windows 11</span></td></tr>
+            <tr><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd></td><td>Switch to previous tab <span class="badge">Windows 11</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 13. Using Tabs -->
+      <section class="panel manual-section" id="tabs" data-reveal data-reveal-index="13">
+        <h2>13. Using Tabs <span class="badge">Windows 11</span></h2>
+        <p>The modern Notepad in Windows 11 supports tabbed editing, allowing you to work with multiple files in a single window.</p>
+
+        <h3>Managing Tabs</h3>
+        <table class="shortcut-table">
+          <thead>
+            <tr><th>Action</th><th>How to Do It</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Open a new tab</td><td><kbd>Ctrl</kbd> + <kbd>N</kbd> or click the <strong>+</strong> button on the tab bar</td></tr>
+            <tr><td>Close a tab</td><td><kbd>Ctrl</kbd> + <kbd>W</kbd> or click the <strong>&times;</strong> on the tab</td></tr>
+            <tr><td>Switch between tabs</td><td>Click on a tab, or use <kbd>Ctrl</kbd> + <kbd>Tab</kbd> / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd></td></tr>
+            <tr><td>Reorder tabs</td><td>Click and drag a tab to a new position</td></tr>
+            <tr><td>Move tab to new window</td><td>Drag the tab outside the window</td></tr>
+          </tbody>
+        </table>
+        <div class="callout">
+          <strong>Note:</strong> Each tab maintains its own undo/redo history, encoding, and unsaved-change indicator.
+        </div>
+      </section>
+
+      <!-- 14. Tips & Tricks -->
+      <section class="panel manual-section" id="tips" data-reveal data-reveal-index="14">
+        <h2>14. Tips &amp; Tricks</h2>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>Strip Formatting from Text</h3>
+            <p>Copy formatted text from any application, paste it into Notepad, then copy it again from Notepad. The text is now plain text with all formatting removed.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Quick Log File</h3>
+            <p>Type <code>.LOG</code> as the very first line of a file. Each time you open that file, Notepad will automatically append the current date and time at the end &mdash; useful for keeping a simple journal or log.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Open Large Files</h3>
+            <p>The modern Windows 11 Notepad can handle much larger files than previous versions. For very large files (hundreds of MB), consider a dedicated editor like VS Code or Notepad++.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Change Line Endings</h3>
+            <p>The status bar displays the current line-ending format. In the Windows 11 version, you can click on it to switch between Windows (CRLF), Unix (LF), and old Mac (CR) line endings.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Use as a Clipboard Scratchpad</h3>
+            <p>Keep a Notepad window open alongside your work to temporarily store text snippets, URLs, or notes you need throughout the day.</p>
+          </div>
+          <div class="tip-card">
+            <h3>Right-to-Left Reading</h3>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Right</kbd> to switch the text direction to right-to-left for languages like Arabic or Hebrew. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Left</kbd> to switch back.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-note" data-reveal data-reveal-index="15">
+        <p>This user manual covers Windows Notepad as included in Windows 10 and Windows 11. Features marked with <span class="badge">Windows 11</span> are exclusive to the modern Notepad app. Microsoft may update features in future Windows releases.</p>
+      </footer>
+
+    </div>
+  </main>
+  <script src="assets/site-animations.js" defer></script>
+</body>
+</html>
