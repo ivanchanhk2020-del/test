@@ -1,0 +1,344 @@
+.manual-page .hero-wrap {
+  background:
+    linear-gradient(135deg, rgba(46, 119, 184, 0.88) 0%, rgba(32, 89, 133, 0.82) 55%, rgba(20, 60, 95, 0.78) 100%),
+    linear-gradient(to bottom, #1a3a5c, #2e77b8);
+  min-height: 300px;
+  height: auto;
+  align-items: center;
+}
+
+.manual-page h1 {
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+.hero-subtitle {
+  margin: 18px 0 0;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.55;
+  max-width: 640px;
+}
+
+.manual-page .main {
+  padding-top: 28px;
+}
+
+/* Table of Contents */
+.toc-panel {
+  background: var(--soft);
+  border-color: rgba(46, 119, 184, 0.18);
+}
+
+.toc-panel h2 {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+}
+
+.toc-list {
+  margin: 0;
+  padding: 0 0 0 22px;
+  columns: 2;
+  column-gap: 36px;
+}
+
+.toc-list li {
+  padding: 5px 0;
+  break-inside: avoid;
+}
+
+.toc-list a {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s var(--ease-out);
+}
+
+.toc-list a:hover {
+  color: var(--brand-deep);
+  text-decoration: underline;
+}
+
+/* Manual sections */
+.manual-section {
+  scroll-margin-top: 80px;
+}
+
+.manual-section h2 {
+  margin: 0 0 16px;
+  padding-left: 14px;
+  border-left: 4px solid var(--brand);
+  font-size: clamp(1.45rem, 2.3vw, 1.9rem);
+}
+
+.manual-section h3 {
+  margin: 24px 0 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.manual-section p {
+  margin: 0 0 12px;
+  line-height: 1.7;
+}
+
+.manual-section ul,
+.manual-section ol {
+  margin: 0 0 14px;
+  padding-left: 24px;
+}
+
+.manual-section li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.manual-section ul ul {
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+/* Steps list with counter styling */
+.steps-list {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+}
+
+.steps-list li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 12px;
+}
+
+.steps-list li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Callout box */
+.callout {
+  margin: 18px 0;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  background: var(--soft);
+  border-left: 4px solid var(--brand);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Badge for Windows 11 features */
+.badge {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--brand);
+  color: #ffffff;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+/* Keyboard key styling */
+kbd {
+  display: inline-block;
+  padding: 2px 7px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #1f2937;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #d1d5db;
+  white-space: nowrap;
+}
+
+code {
+  font-family: "Consolas", "SF Mono", "Monaco", monospace;
+  font-size: 0.88em;
+  padding: 2px 6px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  color: #c7254e;
+}
+
+/* Shortcut tables */
+.shortcut-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 18px;
+  font-size: 0.95rem;
+}
+
+.shortcut-table thead {
+  background: var(--soft);
+}
+
+.shortcut-table th {
+  text-align: left;
+  padding: 10px 14px;
+  font-weight: 700;
+  color: var(--heading);
+  border-bottom: 2px solid var(--line);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.shortcut-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.shortcut-table tbody tr:hover {
+  background: rgba(46, 119, 184, 0.04);
+}
+
+/* Method grid (Opening Notepad) */
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.method-card {
+  background: var(--page-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 18px 16px;
+  transition: transform 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out);
+}
+
+.method-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.method-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: var(--brand-deep);
+}
+
+.method-card p {
+  margin: 0;
+  font-size: 0.94rem;
+}
+
+/* Interface overview items */
+.interface-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.interface-item {
+  padding: 16px;
+  background: var(--page-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  transition: transform 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out);
+}
+
+.interface-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.interface-item h3 {
+  margin: 0 0 6px;
+  font-size: 1.02rem;
+  color: var(--brand-deep);
+}
+
+.interface-item p {
+  margin: 0;
+  font-size: 0.94rem;
+}
+
+/* Tips grid */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.tip-card {
+  background: var(--page-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 20px 18px;
+  transition: transform 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out);
+}
+
+.tip-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.tip-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: var(--brand-deep);
+}
+
+.tip-card p {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+.manual-page .footer-note {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.manual-page .footer-note p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .toc-list {
+    columns: 1;
+  }
+
+  .method-grid,
+  .interface-layout,
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shortcut-table {
+    font-size: 0.88rem;
+  }
+
+  .shortcut-table th,
+  .shortcut-table td {
+    padding: 8px 10px;
+  }
+}
